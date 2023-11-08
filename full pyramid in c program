@@ -1,0 +1,23 @@
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int i,j,k,space,n;
+    printf("enter the number of number ");
+    scanf("%d",&n);
+    
+    
+    for(i=0;i<=5;i++)
+    {   space=n-i;
+        for(j=0;j<=space;j++)
+        {
+            printf(" ");
+            
+        }
+        for (k=1;k<=i;k++)
+        {
+            printf(" *");
+        }printf("\n");
+    }
+}
