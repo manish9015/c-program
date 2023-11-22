@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int r,c,n;
+    printf("enter the number of rows");
+    scanf("%d",&n);
+    
+    //above triangle
+    for (r=1;r<=n;r++)
+    {
+        for ( c=1;c<=n-r;c++)
+        {
+            printf(" ");
+        }
+        for(c=1;c<=2*r-1;c++)
+        {
+            printf("*");
+        }
+        printf("\n");
+        
+    }
+    //lower triangle
+    for (r=n-1;r>=1;r--)
+    {
+        for ( c=1;c<=n-r;c++)
+        {
+            printf(" ");
+        }
+        for(c=1;c<=2*r-1;c++)
+        {
+            printf("*");
+        }
+        printf("\n");
+        
+    }
+    
+    
+}
