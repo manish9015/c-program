@@ -1,0 +1,50 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int arr[10],x,i,n,pos,found;
+    printf("enter the number of elemenet ");
+    scanf("%d",&n);
+    
+    print("enter the element");
+    for(i=0;i<=n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("entered array is :");
+    printf("enter the element for deleting  ");
+    scanf("%d",&x);
+    
+     for(i=0;i<=n;i++)
+    {
+       if(arr[i]==x)
+       {
+           found=1;
+           pos=i;
+           break;
+           
+       }
+    }
+    if(found==1)
+    {
+        for(i=pos;i<=n;i++)
+        {
+            arr[i]=arr[i+1];
+        }
+    }
+
+    print("new array");
+     for(i=0;i<=n-1;i++)
+    {
+        printf("%d\n",arr[i]);
+    }
+    return 0;
+}
